@@ -12,4 +12,5 @@ Copied some code from the .bashrc, because login didn't worked.
 
 ## Credits/based on:
 http://vvv.tobiassjosten.net/bash/dynamic-prompt-with-git-and-ansi-colors/
+
 http://jeditoolkit.com/2010/09/04/git-status-in-bash-prompt.html
