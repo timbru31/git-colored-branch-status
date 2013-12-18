@@ -9,6 +9,9 @@ Shows the branch name and colors based on the current git branch status
 
 Copied some code from the .bashrc, because login didn't worked.
 
+## Color adjustment
+See [here](http://www.gilesorr.com/bashprompt/prompts/flex.html)
+
 
 ## Credits/based on:
 http://vvv.tobiassjosten.net/bash/dynamic-prompt-with-git-and-ansi-colors/
