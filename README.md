@@ -20,11 +20,16 @@ directory, simply add a line like this this file to integrate it:
 
     source './.git-colored-branch-status'
     
-Then add the following line to integrate the git_prompt
+Then add the following line to integrate the git_prompt. It is assumed that you define your PS1
+in MY_PS1. Here is just an example:
 
-    PROMPT_COMMAND='PS1="$NM[$HI\u $SI\w$NM]$INii$(git_prompt): "'
-    
-To let the changes have effect, you have to source your .bash_profile ord .bashrc file:
+    MY_PS1="$NM[$HI\u $SI\w$NM]$IN"
+    PROMPT_COMMAND='PS1="$MY_PS1$(git_prompt): "'
+
+Do not use PS1 in MY_PSI or directly PROMPT_COMMAND because this will result in an totally unexpected
+behaviour.
+
+To let the changes have effect, you have to source your .bash_profile or .bashrc file:
 
     source .bash_profile
 
