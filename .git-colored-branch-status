@@ -58,7 +58,12 @@ git_prompt ()
     fi
   fi
 
-  echo "[$git_color$git_branch${c_reset}]"
+  # Check for $BRAND variable and append if variable is set
+  if [[ -z "$BRAND" ]]; then
+    echo "[$git_color$git_branch${c_reset}]"
+  else
+    echo "[$git_color$git_branch${c_reset}][$BRAND]"
+  fi
 }
 
 # The holy prompt.
